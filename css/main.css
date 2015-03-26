@@ -1,0 +1,244 @@
+@import url('libs/normalize.css');
+@import url('libs/simplegrid.css');
+
+@font-face {
+    font-family: 'UbuntuR';
+    src: url('../fonts/UbuntuR.eot');
+    src: url('../fonts/UbuntuR.eot') format('embedded-opentype'),
+         url('../fonts/UbuntuR.woff2') format('woff2'),
+         url('../fonts/UbuntuR.woff') format('woff'),
+         url('../fonts/UbuntuR.ttf') format('truetype'),
+         url('../fonts/UbuntuR.svg#UbuntuR') format('svg')
+}
+
+@font-face {
+    font-family: 'UbuntuB';
+    src: url('../fonts/UbuntuB.eot');
+    src: url('../fonts/UbuntuB.eot') format('embedded-opentype'),
+         url('../fonts/UbuntuB.woff2') format('woff2'),
+         url('../fonts/UbuntuB.woff') format('woff'),
+         url('../fonts/UbuntuB.ttf') format('truetype'),
+         url('../fonts/UbuntuB.svg#UbuntuB') format('svg')
+}
+
+@font-face {
+    font-family: 'UbuntuM';
+    src: url('../fonts/UbuntuM.eot');
+    src: url('../fonts/UbuntuM.eot') format('embedded-opentype'),
+         url('../fonts/UbuntuM.woff2') format('woff2'),
+         url('../fonts/UbuntuM.woff') format('woff'),
+         url('../fonts/UbuntuM.ttf') format('truetype'),
+         url('../fonts/UbuntuM.svg#UbuntuM') format('svg')
+}
+
+
+/* ==============================================
+				RESET SOME STYLES
+ ============================================== */
+address {
+	font-style: normal
+}
+
+
+/* ==============================================
+				FOR MAIN ELEMENTS
+ ============================================== */
+body {
+	font: 14px/1.5em 'UbuntuR', Helvetica, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'UbuntuB', Helvetica, sans-serif;
+	line-height: 1.2em;
+	margin: 1em 0;
+	text-transform: uppercase
+}
+h1 {
+	font-size: 60px
+}
+h2 {
+	font-size: 36px
+}
+h3 {
+	font-size: 24px
+}
+h4 {
+	font-size: 20px
+}
+
+a {
+	text-decoration: none
+}
+
+img {
+	max-width: 100%
+}
+
+
+/* ==============================================
+				  COLOR PALLETE
+ ============================================== */
+/* ===================== BACKGROUNDS ===================== */
+.bg-blue {
+	background: #255b6d
+}
+.bg-green {
+	background: #0b7274
+}
+.bg-green-dark {
+	background: #07696b
+}
+
+/* ===================== TEXT COLOR ===================== */
+.clr-white {
+	color: #fff
+}
+
+
+/* ==============================================
+				  	ELEMENTS
+ ============================================== */
+/* ===================== BUTTONS ===================== */
+.btn {
+	font: 24px/1em 'UbuntuB', Helvetica, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding: .5em 90px;
+	outline: none;
+	border: none;
+	border-radius: 6px
+}
+.btn-green {
+	background: #00aaad
+}
+.btn-green:hover {
+	background: #41d3d6
+}
+
+
+/* ===================== AREAS FOR ICONS ===================== */
+.icon__area {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px
+}
+.icon__area--sm {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px
+}
+.icon__area--white {
+	background: #fff
+}
+.icon__area--green {
+	background: #00aaad
+}
+.icon__area--blue {
+	background: #255b6d
+}
+
+/* ===================== TABLE SIMULATION ===================== */
+.table {
+	display: table
+}
+.table__row {
+	display: table-row
+}
+.table__cell {
+	display: table-cell;
+  	vertical-align: middle
+}
+
+
+/* ==============================================
+				   	 UNIQUES
+ ============================================== */
+.padding-vertical {
+	padding: 3em 0
+}
+.padding-bottom {
+	padding-bottom: 3em
+}
+
+
+
+
+/* ==============================================
+			   	 	MEDIA QUERIES
+ ============================================== */
+@media screen and (max-width: 1152px) {
+	/* ===================== FOR MAIN ELEMENTS ===================== */
+	h1 {
+		font-size: 54px
+	}
+	h2 {
+		font-size: 32px
+	}
+	h3 {
+		font-size: 20px
+	}
+	h4 {
+		font-size: 18px
+	}
+
+	/* ===================== ELEMENTS ===================== */
+	.btn {
+		font-size: 20px;
+		padding: .5em 70px
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	/* ===================== FOR MAIN ELEMENTS ===================== */
+	h2 {
+		font-size: 28px
+	}
+}
+
+@media screen and (max-width: 992px) {
+	/* ===================== FOR MAIN ELEMENTS ===================== */
+	h1 {
+		font-size: 44px
+	}
+	h2 {
+		font-size: 26px
+	}
+	h3 {
+		font-size: 18px
+	}
+	h4 {
+		font-size: 16px
+	}
+
+	/* ===================== ELEMENTS ===================== */
+	.btn {
+		padding: .5em 55px
+	}
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	/* ==============================================
+				  		ELEMENTS
+ 	 ============================================== */
+	/* ===================== TABLE SIMULATION ===================== */
+	.table,
+	.table__row {
+		display: block
+	}
+	.table__cell {
+		display: inline-block
+	}
+
+
+	/* ==============================================
+					   	 UNIQUES
+	 ============================================== */
+	.padding-vertical {
+		padding: 1em 0
+	}
+	.padding-bottom {
+		padding-bottom: 1em
+	}
+}

@@ -1,0 +1,32 @@
+.footer {
+	color: #fff
+}
+	.footer__top {}
+		.f-logo, 
+		.f-tel, 
+		.f-mail, 
+		.f-social {
+			text-align: center
+		}
+		.f-tel, .f-mail {
+			margin: 2em 0
+		}
+			.f-contact--link {
+				font-size: 24px;
+				color: #d0efea
+			}
+			@media screen and (max-width: 1152px) {
+				.f-contact--link {
+					font-size: 22px
+				}
+			}
+			@media screen and (min-width: 767px) and (max-width: 992px) {
+				.f-contact--link {
+					font-size: 18px
+				}
+			}
+
+	.footer__bottom {
+		padding: 1em;
+	  	text-align: center
+	}

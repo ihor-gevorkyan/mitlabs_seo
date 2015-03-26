@@ -1,0 +1,79 @@
+.s__buttons {
+	display: inline-block;
+	margin: 1.5em 0 0;
+	padding-left: 0;
+	list-style: none
+}
+	.s__button {
+		display: inline-block;
+		float: left;
+		margin-right: 23px
+	}
+	.s__button:last-child {
+		margin: 0
+	}
+		.s__link {
+		  	position: relative;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 20px
+		}
+			.s__icon {
+				position: absolute;
+				background: url(../../images/icons_social.png) 0 0;
+				height: 25px
+			}
+		.s__link--fb {
+			background: #2d4180
+		}
+		.s__link--fb:hover {
+			background: #42579a
+		}	
+			.s__icon--fb {
+				width: 14px;
+				top: 7px;
+				left: 12px
+			}
+		.s__link--tw {
+			background: #00baff
+		}
+		.s__link--tw:hover {
+			background: #50cdfb
+		}
+			.s__icon--tw {
+				width: 22px;
+				top: 7px;
+				left: 10px;
+				background-position: 78px 0
+			}
+		.s__link--g-plus {
+			background: #ff6136
+		}
+		.s__link--g-plus:hover {
+			background: #fd8b6c
+		}
+			.s__icon--gplus {
+				width: 25px;
+				top: 8px;
+				left: 8px;
+				background-position: 52px 0
+			}
+		.s__link--in {
+			background: #2d5a80
+		}
+		.s__link--in:hover {
+			background: #426e93
+		}
+			.s__icon--in {
+			  	width: 25px;
+				top: 5px;
+				left: 8px;
+				background-position: 25px 0
+			}
+
+@media screen and (max-width: 992px) {
+	.s__button {
+		margin-right: 20px
+	}
+}

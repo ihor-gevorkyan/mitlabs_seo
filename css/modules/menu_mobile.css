@@ -1,0 +1,102 @@
+.cbp-spmenu {
+	position: fixed;
+	background: #0b7274
+}
+	.cbp-spmenu h3 {
+		margin: 0;
+		background: #07696b;
+		padding: 20px
+	}
+	.cbp-spmenu a {
+		display: block;
+		color: #fff
+	}
+	.cbp-spmenu a:hover,
+	.cbp-spmenu a:active {
+		background: #255b6d
+	}
+
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000
+}
+.cbp-spmenu-vertical a {
+	padding: 1em
+}
+
+.cbp-spmenu-right {
+	right: -240px
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0
+}
+
+.cbp-border-menu {
+  	position: relative;
+  	float: right;
+  	height: 25px;
+  	width: 25px;
+  	margin: 2em 20px;
+  	cursor: pointer
+}
+	.cbp-border-menu:before {
+		content: "";
+		position: absolute;
+		top: 2px;
+		width: 25px;
+		height: 22px;
+		border-top: 13px double #fff;
+		border-bottom: 4px solid #fff
+	}
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0
+}
+.cbp-spmenu-push-toleft {
+	left: -240px
+}
+
+/* Transitions */
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease
+}
+
+/* Example media queries */
+@media screen and (max-height: 26.375em) {
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px
+	}
+	.cbp-spmenu-push-toleft {
+		left: -190px
+	}
+	.cbp-spmenu-right {
+		right: -190px
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.cbp-border-menu,
+	.cbp-spmenu {
+		display: none
+	}
+	.cbp-spmenu-push-toleft {
+		left: 0
+	}
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.cbp-border-menu {
+		margin: 1em 10px
+	}
+}
