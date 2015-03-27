@@ -1,13 +1,9 @@
 .footer {
 	color: #fff
 }
-	.footer__top {}
-		.f-logo, 
-		.f-tel, 
-		.f-mail, 
-		.f-social {
-			text-align: center
-		}
+	.footer__top {
+		text-align: center
+	}
 		.f-tel, .f-mail {
 			margin: 2em 0
 		}
@@ -25,8 +21,6 @@
 					font-size: 18px
 				}
 			}
-
 	.footer__bottom {
-		padding: 1em;
-	  	text-align: center
+		padding: 1em
 	}

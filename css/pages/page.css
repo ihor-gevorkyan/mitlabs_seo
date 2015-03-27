@@ -1,0 +1,14 @@
+.page {
+	display: table;
+  	width: 100%
+}
+	.page__row {
+	  	display: table-row;
+	  	height: 1px
+	}
+	.page__content {
+		height: 100%
+	}
+		.page__title {
+			margin: .3em 0
+		}

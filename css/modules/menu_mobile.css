@@ -12,14 +12,28 @@
 		color: #fff
 	}
 	.cbp-spmenu a:hover,
-	.cbp-spmenu a:active {
+	.bg-blue .cbp-spmenu a:active,
+	.bg-blue .cbp-spmenu__active {
+		background: #000
+	}
+
+	.bg-blue .cbp-spmenu a:hover,
+	.bg-blue .cbp-spmenu a:active,
+	.bg-blue .cbp-spmenu__active {
 		background: #255b6d
 	}
+	
+	.bg-purple .cbp-spmenu a:hover,
+	.bg-purple .cbp-spmenu a:active,
+	.bg-purple .cbp-spmenu__active{
+		background: #711051
+	}
+
 
 
 /* Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical {
-	width: 240px;
+	width: 200px;
 	height: 100%;
 	top: 0;
 	z-index: 1000
@@ -29,7 +43,7 @@
 }
 
 .cbp-spmenu-right {
-	right: -240px
+	right: -200px
 }
 .cbp-spmenu-right.cbp-spmenu-open {
 	right: 0
@@ -60,7 +74,7 @@
 	left: 0
 }
 .cbp-spmenu-push-toleft {
-	left: -240px
+	left: -200px
 }
 
 /* Transitions */
@@ -72,19 +86,6 @@
 }
 
 /* Example media queries */
-@media screen and (max-height: 26.375em) {
-	.cbp-spmenu-vertical {
-		font-size: 90%;
-		width: 190px
-	}
-	.cbp-spmenu-push-toleft {
-		left: -190px
-	}
-	.cbp-spmenu-right {
-		right: -190px
-	}
-}
-
 @media screen and (min-width: 992px) {
 	.cbp-border-menu,
 	.cbp-spmenu {

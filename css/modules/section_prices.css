@@ -1,0 +1,171 @@
+.prices {}
+	.prices__service,
+	.prices__price,
+	.prices__details {
+		position: relative
+	}
+	.prices__service {
+		width: 45%
+	}
+		.prices__service h4 {
+			position: relative; /* is huck for IE */
+			font: 18px 'UbuntuR', Helvetica, sans-serif;
+		}
+			.prices__service h4:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				background: url(../../images/separator_line.png) repeat-x 0 0;
+				width: 5%;
+				height: 1px
+			}
+			.table__row:nth-child(2) .prices__service h4:after {
+				width: 43%
+			}
+			.table__row:nth-child(3) .prices__service h4:after {
+				width: 35%
+			}
+			.table__row:nth-child(4) .prices__service h4:after {
+				width: 31%
+			}
+			.table__row:nth-child(5) .prices__service h4:after {
+				width: 54%
+			}
+			.table__row:last-child .prices__service h4:after {
+				width: 70%
+			}
+
+	.prices__price {
+		width: 25%
+	}
+		.prices__price p {
+			position: relative; /* is huck for IE */
+			margin: 0;
+			font: 36px/1.6em 'UbuntuB', Helvetica, sans-serif; /* line-height is huck for IE */
+		}
+			.prices__price p:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: url(../../images/separator_line.png) repeat-x 0 0;
+				height: 1px
+			}
+			.table__row:first-child .prices__price p:before {
+				width: 44%
+			}
+			.table__row:nth-child(2) .prices__price p:before {
+				width: 59%
+			}
+			.table__row:nth-child(4) .prices__price p:before {
+				width: 37%
+			}
+			.table__row:nth-child(5) .prices__price p:before {
+				width: 19%
+			}
+			.table__row:last-child .prices__price p:before {
+				width: 34%
+			}
+
+	.prices__details {
+		width: 30%
+	}
+		.prices__details p {
+			position: relative; /* is huck for IE */
+		  	padding-left: 25%
+		}
+			.prices__details p:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 5%;
+				background: url(../../images/separator_line.png) repeat-x 0 0;
+				width: 15%;
+				height: 1px
+			}
+
+@media screen and (min-width: 767px) and (max-width: 1152px) {
+	.prices__service h4 {
+		font-size: 16px
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1152px) {
+	.prices__price p {
+		font-size: 30px;
+		line-height: 2em; /* is huck for IE */
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+	.prices__service h4:after {
+		width: 4%
+	}
+	.table__row:nth-child(2) .prices__service h4:after {
+		width: 40%
+	}
+	.table__row:nth-child(3) .prices__service h4:after {
+		width: 32%
+	}
+	.table__row:nth-child(4) .prices__service h4:after {
+		width: 28%
+	}
+	.table__row:nth-child(5) .prices__service h4:after {
+		width: 52%
+	}
+	.table__row:last-child .prices__service h4:after {
+		width: 69%
+	}
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+	.prices__service h4:after,
+	.table__row:nth-child(4) .prices__service h4:after {
+		width: 4%
+	}
+	.table__row:first-child .prices__service h4:after {
+		background: none
+	}
+	.table__row:nth-child(2) .prices__service h4:after {
+		width: 20%
+	}
+	.table__row:nth-child(3) .prices__service h4:after {
+		width: 10%
+	}
+	.table__row:nth-child(5) .prices__service h4:after {
+		width: 36%
+	}
+	.table__row:last-child .prices__service h4:after {
+		width: 59%
+	}
+
+	.prices__price p {
+  		font-size: 22px;
+  		line-height: 3em; /* is huck for IE */
+	}
+}  
+
+@media handheld, only screen and (max-width: 767px) {
+	.prices__service,
+	.prices__price,
+	.prices__details {
+		width: 100%;
+		text-align: center
+	}
+		.prices__service h4:after, 
+		.prices__price p:before {
+				background: none
+			}
+		.prices__details p {
+			padding-left: 0;
+		  	padding-bottom: 2em
+		}
+			.prices__details p:before {
+				top: 100%;
+				left: 0;
+				width: 100%
+			}
+			.table__row:last-child .prices__details p:before {
+				background: none
+			}
+		
+}

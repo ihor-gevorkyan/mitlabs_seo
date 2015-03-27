@@ -23,6 +23,9 @@
 		.bg-blue .menu__item--active {
 			background: #198d8f
 		}
+		.bg-purple .menu__item--active {
+			background: #9f1a73
+		}
 			.menu__link {
 				line-height: 7em
 			}

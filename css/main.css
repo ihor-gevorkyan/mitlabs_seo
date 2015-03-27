@@ -43,6 +43,10 @@ address {
 /* ==============================================
 				FOR MAIN ELEMENTS
  ============================================== */
+html,
+body { 
+	height: 100% 
+}
 body {
 	font: 14px/1.5em 'UbuntuR', Helvetica, sans-serif
 }
@@ -88,6 +92,9 @@ img {
 .bg-green-dark {
 	background: #07696b
 }
+.bg-purple {
+	background: #711051
+}
 
 /* ===================== TEXT COLOR ===================== */
 .clr-white {
@@ -114,7 +121,6 @@ img {
 .btn-green:hover {
 	background: #41d3d6
 }
-
 
 /* ===================== AREAS FOR ICONS ===================== */
 .icon__area {
@@ -143,18 +149,19 @@ img {
 .table {
 	display: table
 }
-.table__row {
-	display: table-row
-}
-.table__cell {
-	display: table-cell;
-  	vertical-align: middle
-}
+	.table__row {
+		display: table-row
+	}
+		.table__cell {
+			display: table-cell;
+		  	vertical-align: middle
+		}
 
 
 /* ==============================================
 				   	 UNIQUES
  ============================================== */
+/* ===================== PADDINGS ===================== */
 .padding-vertical {
 	padding: 3em 0
 }
@@ -162,7 +169,16 @@ img {
 	padding-bottom: 3em
 }
 
-
+/* ===================== TEXT ALIGN ===================== */
+.text-center {
+	text-align: center
+}
+.text-left {
+	text-align: left
+}
+.text-right {
+	text-align: right
+}
 
 
 /* ==============================================

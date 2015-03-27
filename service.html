@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>MitLabs - Services</title>
@@ -11,15 +11,16 @@
 
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/modules/menu.css" />
-	<link rel="stylesheet" href="css/modules/section_promo.css" />
+	<link rel="stylesheet" href="css/modules/menu_mobile.css" />
+	<link rel="stylesheet" href="css/pages/page.css" />
 	<link rel="stylesheet" href="css/modules/footer.css" />
 	<link rel="stylesheet" href="css/modules/social_buttons.css" />
-
-	<link rel="stylesheet" href="css/modules/menu_mobile.css" />
 	<script src="js/modernizr.custom.js"></script>
+
+	<link rel="stylesheet" href="css/modules/section_promo.css" />
 </head>
-<body class="bg-blue clr-white cbp-spmenu-push">
-	<header>
+<body class="page bg-blue clr-white cbp-spmenu-push">
+	<header class="page__row">
 		<div class="grid grid-pad">
 			<div class="logo padding-vertical col-2-12 mobile-col-1-2">
 				<a href="#" class="logo__link" role="banner">
@@ -28,8 +29,8 @@
 			</div>
 			<nav class="menu col-10-12 push-right" role="navigation">
 				<ul class="menu__list">
-					<li class="menu__item">
-						<a href="#" class="menu__link">Продвижение сайтов</a>
+					<li class="menu__item menu__item--active">
+						<a href="service.html" class="menu__link">Продвижение сайтов</a>
 					</li>
 					<li class="menu__item">
 						<a href="#" class="menu__link">Создание сайтов</a>
@@ -38,12 +39,12 @@
 						<a href="#" class="menu__link">Наши клиенты</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Сроки и стоимость</a>
+						<a href="prices.html" class="menu__link">Сроки и стоимость</a>
 					</li>
 					<li class="menu__item">
 						<a href="#" class="menu__link">Блог</a>
 					</li>
-					<li class="menu__item menu__item--active">
+					<li class="menu__item">
 						<a href="#" class="menu__link">Контакты</a>
 					</li>
 				</ul>
@@ -52,10 +53,10 @@
 			<a id="showRightPush" class="cbp-border-menu"></a>
 			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 				<h3>Menu</h3>
-				<a href="#">Продвижение сайтов</a>
+				<a href="service.html" class="cbp-spmenu__active">Продвижение сайтов</a>
 				<a href="#">Создание сайтов</a>
 				<a href="#">Наши клиенты</a>
-				<a href="#">Сроки и стоимость</a>
+				<a href="prices.html">Сроки и стоимость</a>
 				<a href="#">Блог</a>
 				<a href="#">Контакты</a>
 			</nav>
@@ -63,7 +64,7 @@
 	</header>
 	
 
-	<article class="padding-bottom" role="main">
+	<article class="padding-bottom page__content" role="main">
 		<div class="grid grid-pad">
 			<section class="promo col-1-3">
 				<div class="promo__label table">
@@ -102,7 +103,7 @@
 	</article>
 
 
-	<footer class="footer">
+	<footer class="footer page__row">
 		<div class="bg-green-dark">
 			<div class="footer__top grid grid-pad padding-vertical">
 				<div class="f-logo col-2-12">
@@ -132,31 +133,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer__bottom bg-green" role="contentinfo">
+		<div class="footer__bottom bg-green text-center" role="contentinfo">
 			<address>&copy; MITlabs 2014 Все права защищены</address>
 		</div>
 	</footer>
 
 	<script src="js/classie.js"></script>
-	<script>
-		(function () {
-			var	menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
-				body = document.body;
-			
-			showRightPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRightPush' );
-			};
-
-			function disableOther( button ) {
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
-		})()
-	</script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
